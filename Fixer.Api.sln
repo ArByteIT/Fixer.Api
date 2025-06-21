@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fixer.Api.Client", "Fixer.Api.Client\Fixer.Api.Client.csproj", "{EBDDCD06-237C-493D-B7B3-6F8AC4C178C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fixer.Api.IntegrationTests", "Fixer.Api.IntegrationTests\Fixer.Api.IntegrationTests.csproj", "{52D19B54-6979-47A6-A7CE-CADE9C90B3E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBDDCD06-237C-493D-B7B3-6F8AC4C178C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBDDCD06-237C-493D-B7B3-6F8AC4C178C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBDDCD06-237C-493D-B7B3-6F8AC4C178C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBDDCD06-237C-493D-B7B3-6F8AC4C178C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52D19B54-6979-47A6-A7CE-CADE9C90B3E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52D19B54-6979-47A6-A7CE-CADE9C90B3E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52D19B54-6979-47A6-A7CE-CADE9C90B3E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52D19B54-6979-47A6-A7CE-CADE9C90B3E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {238C6AB9-34B0-44F4-8A24-DCB1A48E9679}
+	EndGlobalSection
+EndGlobal
