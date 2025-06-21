@@ -115,3 +115,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Links
 
 * [Fixer.io API Documentation](https://fixer.io/documentation)
+* [NuGet Package](https://www.nuget.org/packages/Fixer.Api.Client/1.0.0)
