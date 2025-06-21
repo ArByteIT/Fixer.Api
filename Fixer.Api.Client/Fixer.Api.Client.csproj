@@ -4,6 +4,17 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<Authors>Arnout Pullen</Authors>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Fixer.io .NET API Client - Currency Exchange Rates</Title>
+    <Description>A strongly-typed, easy-to-use .NET client for the Fixer.io API, providing real-time and historical currency exchange rates, currency conversion, time series, and fluctuation data with built-in error handling and seamless DI integration.</Description>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/ArByteIT/Fixer.Api</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>FixerIo</PackageTags>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +25,17 @@
 
   <ItemGroup>
     <EditorConfigFiles Remove="E:\Projects\Fixer.Api\Fixer.Api.Client\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
