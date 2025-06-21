@@ -1,3 +1,4 @@
+![.NET Tests](https://github.com/ArbyteIt/Fixer.Api/actions/workflows/tests.yml/badge.svg)
 # Fixer.Api.Client
 
 A simple, strongly-typed, and configurable .NET API client for the [Fixer.io](https://fixer.io) currency exchange rates API.  
