@@ -5,6 +5,8 @@ using Fixer.Api.Client.Models;
 using Fixer.Api.Client.Options;
 using Microsoft.Extensions.Options;
 
+[assembly: CollectionBehavior(DisableTestParallelization = true)]
+
 namespace Fixer.Api.IntegrationTests;
 
 public class FixerClientIntegrationTests
@@ -43,6 +45,8 @@ public class FixerClientIntegrationTests
         Assert.True(response.Success, "Expected Success == true");
         Assert.NotNull(response.Rates);
         Assert.NotEmpty(response.Rates);
+
+        await Task.Delay(1000); // Delay 1 second to avoid rate limiting issues in tests
     }
 
     [Fact]
@@ -54,6 +58,8 @@ public class FixerClientIntegrationTests
         Assert.True(response.Success, "Expected Success == true");
         Assert.NotNull(response.Symbols);
         Assert.NotEmpty(response.Symbols);
+
+        await Task.Delay(1000); // Delay 1 second to avoid rate limiting issues in tests
     }
 
     [Fact]
@@ -69,5 +75,7 @@ public class FixerClientIntegrationTests
         {
             Assert.Contains(symbol.Key, CurrencySymbol.All);
         }
+
+        await Task.Delay(1000); // Delay 1 second to avoid rate limiting issues in tests
     }
 }
