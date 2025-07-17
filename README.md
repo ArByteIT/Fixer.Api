@@ -1,3 +1,6 @@
+[![Fixer.Api.Client Nuget](https://img.shields.io/nuget/v/Fixer.Api.Client.svg?style=flat)](https://www.nuget.org/packages/Fixer.Api.Client)
+![.NET Tests](https://github.com/ArbyteIt/Fixer.Api/actions/workflows/tests.yml/badge.svg)
+
 # Fixer.Api.Client
 
 A simple, strongly-typed, and configurable .NET API client for the [Fixer.io](https://fixer.io) currency exchange rates API.  
@@ -115,4 +118,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Links
 
 * [Fixer.io API Documentation](https://fixer.io/documentation)
-* [NuGet Package](https://www.nuget.org/packages/Fixer.Api.Client/1.0.0)
+* [NuGet Package](https://www.nuget.org/packages/Fixer.Api.Client)
