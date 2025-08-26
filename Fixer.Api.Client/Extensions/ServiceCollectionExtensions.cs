@@ -9,18 +9,16 @@ namespace Fixer.Api.Client.Extensions;
 
 public static class ServiceCollectionExtensions
 {
-    public static IServiceCollection AddFixerClient(this IServiceCollection services, IConfiguration configuration)
+    public static IHttpClientBuilder AddFixerClient(this IServiceCollection services, IConfiguration configuration)
     {
         services.Configure<FixerOptions>(configuration.GetRequiredSection(FixerOptions.SectionName));
         services.AddTransient<FixerApiErrorHandler>();
 
-        services.AddHttpClient<IFixerClient, FixerClient>(FixerOptions.HttpClientName, (provider, client) =>
+        return services.AddHttpClient<IFixerClient, FixerClient>(FixerOptions.HttpClientName, (provider, client) =>
         {
             var options = provider.GetRequiredService<IOptions<FixerOptions>>().Value;
             client.BaseAddress = new Uri(options.BaseUrl);
         })
             .AddHttpMessageHandler<FixerApiErrorHandler>();
-
-        return services;
     }
 }
