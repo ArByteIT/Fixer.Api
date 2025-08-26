@@ -141,6 +141,7 @@ public class CurrencySymbol
     public static readonly string SOS = "SOS";
     public static readonly string SRD = "SRD";
     public static readonly string STD = "STD";
+    public static readonly string STN = "STN";
     public static readonly string SVC = "SVC";
     public static readonly string SYP = "SYP";
     public static readonly string SZL = "SZL";
@@ -167,6 +168,7 @@ public class CurrencySymbol
     public static readonly string XAG = "XAG";
     public static readonly string XAU = "XAU";
     public static readonly string XCD = "XCD";
+    public static readonly string XCG = "XCG";
     public static readonly string XDR = "XDR";
     public static readonly string XOF = "XOF";
     public static readonly string XPF = "XPF";
