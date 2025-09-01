@@ -9,11 +9,11 @@ using Microsoft.Extensions.Options;
 
 namespace Fixer.Api.Integration.Tests;
 
-public class FixerClientIntegration.Tests
+public class FixerClientIntegrationTests
 {
     private readonly FixerClient _client;
 
-    public FixerClientIntegration.Tests()
+    public FixerClientIntegrationTests()
     {
         DotNetEnv.Env.Load();
 
