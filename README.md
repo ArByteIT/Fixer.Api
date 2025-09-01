@@ -58,18 +58,12 @@ Your configuration should include at least:
 Inject `IFixerClient` into your service or controller:
 
 ```csharp
-public class CurrencyService
+public class FixerService(IFixerClient fixerClient)
 {
-    private readonly IFixerClient _fixerClient;
-
-    public CurrencyService(IFixerClient fixerClient)
+    public async Task PrintLatestRatesAsync(CancellationToken cancellationToken = default)
     {
-        _fixerClient = fixerClient;
-    }
+        var response = await fixerClient.GetLatestRatesAsync(baseSymbol: "EUR", symbols: ["USD", "GBP"], cancellationToken);
 
-    public async Task PrintLatestRatesAsync()
-    {
-        var response = await _fixerClient.GetLatestRatesAsync(baseSymbol: "EUR", symbols: new[] { "USD", "GBP" });
         if (response?.Success == true)
         {
             foreach (var rate in response.Rates)
