@@ -11,7 +11,7 @@ using Microsoft.Extensions.Options;
 using Xunit;
 using Fixer.Api.Client.Exceptions;
 
-namespace Fixer.Api.IntegrationTests.Extensions;
+namespace Fixer.Api.Integration.Tests.Extensions;
 
 public class ServiceCollectionExtensionsTests
 {

@@ -7,13 +7,13 @@ using Microsoft.Extensions.Options;
 
 [assembly: CollectionBehavior(DisableTestParallelization = true)]
 
-namespace Fixer.Api.IntegrationTests;
+namespace Fixer.Api.Integration.Tests;
 
-public class FixerClientIntegrationTests
+public class FixerClientIntegration.Tests
 {
     private readonly FixerClient _client;
 
-    public FixerClientIntegrationTests()
+    public FixerClientIntegration.Tests()
     {
         DotNetEnv.Env.Load();
 
